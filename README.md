@@ -16,7 +16,10 @@ The initial pattern constitutes the seed of the system. The first generation is 
 *Text taken from [Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life "GameOfLife Wikipedia")*
 
 # Implementation
-I declere the libraries in `game.h` and i defined them in `game.c`; the main functions are `_sshort get_count_cells_alive_around(rid* grid, _sshort x,_sshort y)` and `void set_life(Grid* old, Grid* new)` that implements the algorithm of Game Of Life.
+I declere the libraries in `game.h` and i defined them in `game.c`; the main functions are `_sshort get_count_cells_alive_around(rid* grid, _sshort x,_sshort y)` and `void set_life(Grid* old, Grid* new)` that implements the algorithm of Game Of Life; i added that when the live cells go out of the grid they come back in (see `_sshort out_of_grid(_sshort x, _sshort y)`), then every time I set a new life the text color changes(in the `main.c` function).
+
+# How to Run
+You can download the release or do as written below.
 
 # How to Contribute
 Clone the repository and change what you need to, then you compile with a compiler with Make, in my case i used MSYS2 package which has the make command and the gcc compiler, [link for installation](https://www.msys2.org/ "MSYS2").

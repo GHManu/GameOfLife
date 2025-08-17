@@ -20,7 +20,7 @@ typedef signed short _sshort;
 #define DEAD '.'
 
 typedef struct{
-    _schar cells[COLS*ROWS];    //400 celle
+    _schar cells[COLS*ROWS];    //1600 celle
 }Grid;
 
 _sshort out_of_grid(_sshort x, _sshort y); //This function checks if the coordinates go outside the grid

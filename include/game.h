@@ -14,7 +14,7 @@
 typedef signed char _schar;
 typedef signed short _sshort;
 
-#define COLS 0x28    //1*(16^1)+ 4 *(16^0) = 20
+#define COLS 0x28    //2*(16^1)+ 8 *(16^0) = 40
 #define ROWS 0x28
 #define ALIVE '*'
 #define DEAD '.'

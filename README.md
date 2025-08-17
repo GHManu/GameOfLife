@@ -17,7 +17,7 @@ The initial pattern constitutes the seed of the system. The first generation is 
 
 # Implementation
 I declere the libraries in `game.h` and i defined them in `game.c`; the main functions are `_sshort get_count_cells_alive_around(rid* grid, _sshort x,_sshort y)` and `void set_life(Grid* old, Grid* new)` that implements the algorithm of Game Of Life; i added that when the live cells go out of the grid they come back in (see `_sshort out_of_grid(_sshort x, _sshort y)`), then every time I set a new life the text color changes(in the `main.c` function).
-Implementation inspired by a video of @antirez
+Implementation inspired by a video of [@antirez](https://github.com/antirez).
 
 # How to Run
 You can download the release or do as written below.
